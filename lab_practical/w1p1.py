@@ -1,1 +1,1 @@
-input=hello
+input=("Input some thing to test the code: ")
