@@ -1,25 +1,25 @@
-roll_no = 250160450323
-name = "Kunal Teli"
-age = 23
+roll_num = input("Enter your roll number: ")
+student_name = input("Enter your name: ")
+student_age = int(input("Enter your age: "))
 
-marks_python = 85
-marks_cyber = 78
-marks_bigdata = 90
+print("\n--- Enter your marks out of 100 ---")
+python = float(input("Python marks: "))
+cyber = float(input("Cyber Security marks: "))
+bigdata = float(input("Big Data marks: "))
 
-total_marks = marks_python + marks_cyber + marks_bigdata
-percentage = (total_marks / 300) * 100
+total_score = python + cyber + bigdata
+percent = (total_score / 300) * 100
 
-passed_python = marks_python >= 40
-passed_cyber = marks_cyber >= 40
-passed_bigdata = marks_bigdata >= 40
+if python >= 40 and cyber >= 40 and bigdata >= 40:
+    status = "PASSED"
+else:
+    status = "FAILED"
 
-overall_pass = passed_python and passed_cyber and passed_bigdata
-
-print("----- Student Result-----")
-print(f"Roll Number  : {roll_no}")
-print(f"Student Name : {name}")
-print(f"Age          : {age}")
-print(f"Marks (P/C/B): {marks_python}, {marks_cyber}, {marks_bigdata}")
-print(f"Total Marks  : {total_marks} / 300")
-print(f"Percentage   : {percentage:.2f}%")
-print(f"Pass Status  : {'PASSED' if overall_pass else 'FAILED'}")
+print("\n----- Student Result -----")
+print(f"Roll Number  : {roll_num}")
+print(f"Student Name : {student_name}")
+print(f"Age          : {student_age}")
+print(f"Marks (P/C/B): {python}, {cyber}, {bigdata}")
+print(f"Total Marks  : {total_score} / 300")
+print(f"Percentage   : {percent:.2f}%")
+print(f"Pass Status  : {status}")
