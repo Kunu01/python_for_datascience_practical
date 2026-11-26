@@ -1,7 +1,7 @@
 subjects = ["C++", "Data Structures", "Operating Systems", "DBMS", "Software Engineering"]
 students = []
 
-print("STUDENT PERFORMANCE ANALYTICS SYSTEM")
+print("student marks/performance ")
 
 for i in range(10):
     print(f"\nEnter Details of Student {i + 1}")
